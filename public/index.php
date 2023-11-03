@@ -26,9 +26,12 @@ $result = $connection->query($sql);
 
 while ($item = $result->fetch_assoc()) {
     echo '<h2>' . $item['Title'] . '</h2>';
-    echo '<img src="'. $item['Img'] .'">';
+    echo '<img  src="'. $item['Img'] .'">';
     echo '<p>'. $item['Content'] .'</p>';
+    echo '<a  href="SDG.php?id='.$item['Id'].'">knop</a>';
+    
 }
+
 ?>
 
 </body>
